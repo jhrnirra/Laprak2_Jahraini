@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan2_Jahraini</title>
+    <style>
+         *{
+            box-sizing: border-box;
+            font-family: monospace;
+        }
+        .soal{
+            padding: 1cm;
+        }
+
+        body.putih{
+            background-color: rgb(253, 178, 243);
+            color: black;
+
+        header{
+            background-color: #f76fb3;
+            padding-bottom: 40px;
+        }
+        .switch{
+            float: right;
+            position: relative;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-right: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(194, 222, 255);
+            color: rgb(7, 0, 0);
+            cursor: pointer;
+        }
+        p{
+            text-align: justify;
+            padding: 15px;
+            background-color: #ccabe2;
+            border-radius: 0.3cm;
+            color: rgb(8, 0, 0);  
+            border: 3px dashed rgb(100, 50, 150);
+        }
+        }
+
+        body.hitam{
+             background-color: rgb(156, 26, 139);
+             color: rgb(185, 11, 11);
+        }
+
+        header{
+            background-color: #cbe43d;
+            padding-bottom: 40px;
+        }
+
+        .switch{
+            float: right;
+            position: relative;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-right: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(51, 255, 0);
+            color: black;
+            cursor: pointer;
+            
+        }
+
+        p{
+        text-align: justify;
+        padding: 15px;
+        background-color: rgb(248, 4, 195);
+        border-radius: 0.3cm;
+        color: black; 
+        border: 3px dashed rgb(100, 50, 150);
+        }
+
+        body.hitam p {
+            background-color: rgb(248, 4, 195);
+            color: black;
+        }
+
+        body h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        body h2 {
+            text-align: center;
+        }
+
+        li {
+            font-size: 15px;
+        }
+
+        .list, h3 {
+            cursor: pointer;
+            border: 1px solid rgb(131, 180, 236);
+        }
+
+        .hilang {
+            display: none;
+        }
+    </style>
+</head>
+<body class="putih">
+    <header>
+        <h1>LAPORAN TEORI</h1>
+        <h2>Jahraini Saputri | 202331152</h2>
+        <button class="switch" onclick="berubah()">Ubah Tampilan</button>
+    </header>
+    <div class="soal">
+        <ol>
+            <li>
+                <h3 onclick="sembunyi()">HTML, CSS, JavaScript</h3>
+                <ol class="hilang" id="hil">
+                    <li onclick="html()"><b>HTML</b></li>
+                    <p class="hilang" id="htm">
+                        HTML merupakan singkatan dari Hypertext Markup Language yang dimana merupakan elemen dasar atau kerangka
+                        dasar yang digunakan untuk menandai bagian konten untuk ditampilkan di halaman web. HTML digunakan dalam
+                        pemrograman web karena HTML itu sendiri seperti bahasa dasar atau utama yang digunakan untuk kita dapat 
+                        membuat struktur dan konten pada halaman web kita. Yang dimana dapat mengatur elemen-elemen seperti teks, 
+                        gambar, tautan, formulir, dan tabel. Jadi, HTML ini penting karena menyediakan kerangka kerja di mana semua 
+                        konten dan elemen lain ditempatkan. Tanpa HTML, tidak ada struktur dasar yang dapat diinterpretasikan oleh 
+                        browser. Integrasi HTML dalam pemrograman web yaitu HTML sendiri sebagai Struktur Dasar yang dimana HTML 
+                        digunakan untuk membuat struktur halaman web. Seperti  jika kita ingin membuat lampu pintar, maka HTML itu 
+                        di ibaratkan sebagai tombol awal untuk menyalakan bahkan mematikan lampu.
+                    </p>
+                    <li onclick="css()"><b>CSS</b></li>
+                    <p class="hilang" id="cs">
+                        CSS merupakan singkatan dari Cascading Style Sheets yang dimana merupakan bahasa yang digunakan untuk mengatur 
+                        tampilan suatu dokumen yang ditulis dalam markup atau markup language. Terdapat 3 cara untuk pemasangan CSS pada 
+                        dokumen HTML yaitu : 1. External Style Sheet (file CSS berbeda dari file HTML). 2. Internal Style Sheet (Kode CSS
+                        dipasang di dalam tag head HTML). 3. Inline Style Sheet (kode CSS langsung dipasang di tag HTML, 
+                        tidak direkomendasikan). CSS digunakan dalam pemrograman web karena CSS itu sendiri digunakan untuk mengatur tampilan visual dan tata letak halaman web. 
+                        Yang Dimana ini mencakup pengaturan warna, font, margin, padding, dan posisi elemen. Jadi, CSS ini memungkinkan pemisahan konten 
+                        dari desain, yang membuat pengelolaan dan pemeliharaan situs web menjadi lebih mudah. Desain dapat diubah tanpa mengubah struktur HTML. 
+                        Integrasi CSS dalam pemrograman web yaitu CSS sendiri untuk Desain Visual yang Dimana CSS mengatur tampilan visual dari elemen HTML 
+                        tanpa mengubah struktur HTML. Seperti  jika kita ingin membuat lampu pintar, maka CSS itu akan menambahkan warna dan desain, membuat
+                        lampu terlihat cantik dan menarik dengan efek cahaya.
+                    </p>
+                    <li onclick="js()"><b>JavaScript</b></li>
+                    <p class="hilang" id="js">
+                        JavaScript sendiri yaitu bahasa pemrograman yang digunakan untuk menambahkan interaktivitas dan fungsi dinamis ke halaman web.
+                        Jadi, sama halnya dengan HTML dan CSS, JavaScript juga  merupakan salah satu pilar utama pengembangan web. Salah satu library dalam 
+                        JavaScript  yaitu Jquery yang dimana dapat menyederhanakan pemrograman JavaScript. JavaScript digunakan dalam pemrograman web karena 
+                        javaScript ini bahasa pemrograman yang dapat kita gunakan untuk menambahkan interaktivitas dan fungsi dinamis ke 
+                        halaman web. Ini mencakup validasi formulir, manipulasi DOM, dan membuat aplikasi web yang kompleks. Yang Dimana javaScript memungkinkan
+                        halaman web menjadi interaktif dan responsif, meningkatkan pengalaman pengguna dengan fitur seperti animasi, pemrosesan real-time, dan 
+                        interaksi pengguna yang kaya. Integrasi JavaScript dalam pemrograman web JavaScript digunakan untuk menambahkan interaktivitas. File 
+                        JavaScript terpisah dihubungkan dengan tag <|script|> di akhir body HTML, sehingga memastikan bahwa seluruh dokumen HTML telah dimuat 
+                        sebelum skrip dijalankan. Seperti  jika kita ingin membuat lampu pintar, maka JavaScript menambahkan fungsi pintar pada lampu, membuatnya
+                        dapat dinyalakan dan dimatikan dengan tombol.
+                    </p>
+                </ol>
+            </li>
+        </ol>    
+    </div>
+    <script>
+        // Fungsi untuk menyembunyikan/menampilkan elemen berdasarkan ID
+        function sembunyi() {
+            var section = document.getElementById("hil");
+            if (section.classList.contains("hilang")) {
+                alert("Apakah Kamu Ingin Menampilkannya?");
+                section.classList.remove("hilang");
+            } else {
+                alert("Isi akan disembunyikan");
+                section.classList.add("hilang");
+            }
+        }
+
+        function html() {
+            var paragraph = document.getElementById("htm");
+            if (paragraph.classList.contains("hilang")) {
+                alert("Apakah Kamu Ingin Menampilkannya?");
+                paragraph.classList.remove("hilang");
+            } else {
+                alert("Isi akan disembunyikan");
+                paragraph.classList.add("hilang");
+            }
+        }
+
+        function css() {
+            var paragraph = document.getElementById("cs");
+            if (paragraph.classList.contains("hilang")) {
+                alert("Apakah Kamu Ingin Menampilkannya?");
+                paragraph.classList.remove("hilang");
+            } else {
+                alert("Isi akan disembunyikan");
+                paragraph.classList.add("hilang");
+            }
+        }
+
+        function js() {
+            var paragraph = document.getElementById("js");
+            if (paragraph.classList.contains("hilang")) {
+                alert("Apakah Kamu Ingin Menampilkannya?");
+                paragraph.classList.remove("hilang");
+            } else {
+                alert("Isi akan disembunyikan");
+                paragraph.classList.add("hilang");
+            }
+        }
+
+        function berubah() {
+            var body = document.body;
+            body.classList.toggle("putih");
+            body.classList.toggle("hitam");
+        }
+    </script>
+</body>
+</html>
